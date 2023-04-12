@@ -7,22 +7,22 @@
  */
 
 /* ----MODUL STANDART---- */
-function Curl($u, $h = 0, $p = 0,$c = 0) {
+function Curl($url, $header = 0, $post = 0,$c = 0) {
 	while(true){
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $u);
+		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
 		curl_setopt($ch, CURLOPT_COOKIE,TRUE);
-		if($p) {
+		if($post) {
 			curl_setopt($ch, CURLOPT_POST, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $p);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 		}
-		if($h) {
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $h);
+		if($header) {
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 		}
 		curl_setopt($ch, CURLOPT_HEADER, true);
 		$r = curl_exec($ch);
