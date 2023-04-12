@@ -33,7 +33,7 @@ function Curl($url, $header = 0, $post = 0,$c = 0) {
 			curl_close($ch);
 			//jika body html tidak ada respon
 			if(!$bd){
-				print m."Check your Connection!";
+				print "Check your Connection!";
 				sleep(2);
 				print "\r                    \r";
 				continue;
