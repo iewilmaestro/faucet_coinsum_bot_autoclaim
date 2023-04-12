@@ -1,4 +1,10 @@
 <?php
+/**
+ * server-bot
+ *
+ * @see        https://github.com/iewilmaestro/faucet_coinsum_bot_autoclaim
+ * @author     iewilmaestro <purna.iera@gmail.com>
+ */
 
 /* ----MODUL STANDART---- */
 function Curl($u, $h = 0, $p = 0,$c = 0) {
