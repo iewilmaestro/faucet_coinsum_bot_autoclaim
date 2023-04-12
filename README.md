@@ -14,7 +14,7 @@ $ termux-setup-storage
 
 # Instalasi
 ```php
-git clone 
+git clone https://github.com/iewilmaestro/faucet_coinsum_bot_autoclaim
 ```
 # Yang perlu di perhatikan
 ```php
