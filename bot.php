@@ -1,6 +1,6 @@
 <?php
 /**
- * server-bot
+ * faucet-coinsum
  *
  * @see        https://github.com/iewilmaestro/faucet_coinsum_bot_autoclaim
  * @author     iewilmaestro <purna.iera@gmail.com>
